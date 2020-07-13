@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>轮播图</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- 轮播图 -->
+<div class="ld-3">
+    <!-- data-imgs 是图片的总数 -->
+    <!-- data-active 是当前显示的图片的下标 -->
+    <div class="slide" data-imgs="3" data-active="0">
+        <img id="id-image-0" class="slide-image active" src="images/1.PNG" alt="绿久">
+        <img id="id-image-1" class="slide-image" src="images/2.PNG" alt="蛙吹">
+        <img id="id-image-2" class="slide-image" src="images/3.PNG" alt="相遇">
+        <button class="slide-button slide-left vertical-center" data-offset="-1">
+            < </button>
+        <button class="slide-button slide-right vertical-center" data-offset="1">
+            > </button>
+        <div class="slide-indicators">
+            <div id="id-indi-0" data-index="0" class="slide-indi white"></div>
+            <div id="id-indi-1" data-index="1" class="slide-indi"></div>
+            <div id="id-indi-2" data-index="2" class="slide-indi"></div>
+        </div>
+    </div>
+</div>
+<script src="js/base.js"></script>
+<script src="js/fun.js"></script>
+</body>
+</html>

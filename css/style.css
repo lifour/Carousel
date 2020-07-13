@@ -1,0 +1,66 @@
+.hide {
+    display: none;
+}
+.menu-content {
+    height: 100px;
+    border: 1px solid red;
+}
+img {
+    /*transition 这个 css 指定了某个属性发生变化的时候自动使用动画效果和动画时间*/
+    transition: opacity 2ms;
+}
+.item img {
+    width: 100px;
+    height: 100px;
+}
+
+/*3. 轮播图*/
+.slide {
+    position: relative;
+    width: 800px;
+}
+.slide-image {
+    display: none;
+}
+.active {
+    display: inline-block;
+}
+.slide-button {
+    width: 30px;
+    height: 50px;
+    opacity: 0.7;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+}
+.slide-left {
+    left: 0;
+    border-radius:   0px 20px 20px 0px   ;
+}
+.slide-right {
+    right: 0;
+    border-radius: 20px  0px   0px 20px  ;
+}
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slide-indicators {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+}
+.slide-indi {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: darkgrey ;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.white {
+    background: white;
+}
